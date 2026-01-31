@@ -98,7 +98,10 @@ background-size: 1.5em 1.5em;
                 
                 <!-- Left: Contact Form -->
                 <div class="lg:col-span-2">
-                    <form class="bg-white rounded-[26px] p-8 md:p-10 shadow-[0_18px_48px_0px_rgba(20,21,26,0.06)] border border-[rgba(20,21,26,0.06)]">
+                    <form action="https://formsubmit.co/zalocn@gmail.com" method="POST" class="bg-white rounded-[26px] p-8 md:p-10 shadow-[0_18px_48px_0px_rgba(20,21,26,0.06)] border border-[rgba(20,21,26,0.06)]">
+                        <input type="hidden" name="_subject" value="Nueva consulta desde Delvir (Formulario de contacto)" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_template" value="table" />
                         <div class="space-y-6">
                             <!-- Name & Email Row -->
                             <div class="grid md:grid-cols-2 gap-6">
@@ -108,7 +111,7 @@ background-size: 1.5em 1.5em;
                                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-[#9AA0B2]">
                                             <iconify-icon icon="solar:user-linear" width="18"></iconify-icon>
                                         </div>
-                                        <input type="text" id="name" class="w-full h-12 pl-10 pr-4 rounded-[12px] bg-[#F6F7FC] border border-transparent focus:bg-white focus:border-[#6C6BFF] focus:ring-4 focus:ring-[#6C6BFF]/10 transition-all outline-none text-sm text-[#14151A] placeholder-[#9AA0B2]" placeholder="Jane Doe">
+                                        <input type="text" id="name" name="name" required class="w-full h-12 pl-10 pr-4 rounded-[12px] bg-[#F6F7FC] border border-transparent focus:bg-white focus:border-[#6C6BFF] focus:ring-4 focus:ring-[#6C6BFF]/10 transition-all outline-none text-sm text-[#14151A] placeholder-[#9AA0B2]" placeholder="Jane Doe">
                                     </div>
                                 </div>
                                 <div class="space-y-2">
@@ -117,7 +120,7 @@ background-size: 1.5em 1.5em;
                                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-[#9AA0B2]">
                                             <iconify-icon icon="solar:letter-linear" width="18"></iconify-icon>
                                         </div>
-                                        <input type="email" id="email" class="w-full h-12 pl-10 pr-4 rounded-[12px] bg-[#F6F7FC] border border-transparent focus:bg-white focus:border-[#6C6BFF] focus:ring-4 focus:ring-[#6C6BFF]/10 transition-all outline-none text-sm text-[#14151A] placeholder-[#9AA0B2]" placeholder="jane@example.com">
+                                        <input type="email" id="email" name="email" required class="w-full h-12 pl-10 pr-4 rounded-[12px] bg-[#F6F7FC] border border-transparent focus:bg-white focus:border-[#6C6BFF] focus:ring-4 focus:ring-[#6C6BFF]/10 transition-all outline-none text-sm text-[#14151A] placeholder-[#9AA0B2]" placeholder="jane@example.com">
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +132,7 @@ background-size: 1.5em 1.5em;
                                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-[#9AA0B2]">
                                         <iconify-icon icon="solar:question-circle-linear" width="18"></iconify-icon>
                                     </div>
-                                    <select id="topic" class="w-full h-12 pl-10 pr-4 rounded-[12px] bg-[#F6F7FC] border border-transparent focus:bg-white focus:border-[#6C6BFF] focus:ring-4 focus:ring-[#6C6BFF]/10 transition-all outline-none text-sm text-[#14151A]">
+                                    <select id="topic" name="topic" required class="w-full h-12 pl-10 pr-4 rounded-[12px] bg-[#F6F7FC] border border-transparent focus:bg-white focus:border-[#6C6BFF] focus:ring-4 focus:ring-[#6C6BFF]/10 transition-all outline-none text-sm text-[#14151A]">
                                         <option value="" disabled="" selected="">Selecciona un tema</option>
                                         <option value="billing">Pagos y membresía</option>
                                         <option value="technical">Problema técnico</option>
@@ -143,12 +146,12 @@ background-size: 1.5em 1.5em;
                             <!-- Message -->
                             <div class="space-y-2">
                                 <label for="message" class="text-sm font-medium text-[#14151A] ml-1">Mensaje</label>
-                                <textarea id="message" rows="5" class="w-full p-4 rounded-[12px] bg-[#F6F7FC] border border-transparent focus:bg-white focus:border-[#6C6BFF] focus:ring-4 focus:ring-[#6C6BFF]/10 transition-all outline-none text-sm text-[#14151A] placeholder-[#9AA0B2] resize-none" placeholder="¿Cómo podemos ayudarte hoy?"></textarea>
+                                <textarea id="message" name="message" rows="5" required class="w-full p-4 rounded-[12px] bg-[#F6F7FC] border border-transparent focus:bg-white focus:border-[#6C6BFF] focus:ring-4 focus:ring-[#6C6BFF]/10 transition-all outline-none text-sm text-[#14151A] placeholder-[#9AA0B2] resize-none" placeholder="¿Cómo podemos ayudarte hoy?"></textarea>
                             </div>
 
                             <!-- Submit -->
                             <div class="pt-2">
-                                <button type="button" class="w-full h-12 rounded-full bg-[linear-gradient(135deg,#5757E6_0%,#6C6BFF_55%,#8E8CFF_100%)] text-white text-base font-medium shadow-[0_10px_28px_0px_rgba(108,107,255,0.25)] hover:shadow-[0_14px_32px_0px_rgba(108,107,255,0.35)] transition-all duration-300 hover:-translate-y-1 active:scale-[0.985] flex items-center justify-center gap-2">
+                                <button type="submit" class="w-full h-12 rounded-full bg-[linear-gradient(135deg,#5757E6_0%,#6C6BFF_55%,#8E8CFF_100%)] text-white text-base font-medium shadow-[0_10px_28px_0px_rgba(108,107,255,0.25)] hover:shadow-[0_14px_32px_0px_rgba(108,107,255,0.35)] transition-all duration-300 hover:-translate-y-1 active:scale-[0.985] flex items-center justify-center gap-2">
                                     <span>Enviar mensaje</span>
                                     <iconify-icon icon="solar:paper-plane-linear" width="18"></iconify-icon>
                                 </button>
@@ -257,6 +260,7 @@ background-size: 1.5em 1.5em;
                 <div>
                     <h4 class="text-sm font-semibold mb-4 text-white">Legal</h4>
                     <ul class="space-y-3 text-[#9AA0B2] text-sm">
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contáctanos</a></li>
                         <li><a href="terms.html" class="hover:text-white transition-colors">Términos y condiciones</a></li>
                         <li><a href="privacy.html" class="hover:text-white transition-colors">Política de privacidad</a></li>
                     </ul>

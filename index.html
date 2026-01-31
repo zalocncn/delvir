@@ -27,6 +27,19 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #9AA0B2;
         }
+
+        /* Calendly widget styling to match Delvir UI */
+        .delvir-calendly {
+            border-radius: 18px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: 0 18px 48px 0 rgba(20, 21, 26, 0.14);
+        }
+        .delvir-calendly iframe {
+            border: 0;
+            border-radius: 18px;
+        }
     </style>
 </head>
 <body class="bg-[#F6F7FC] text-[#14151A] overflow-x-hidden">
@@ -88,9 +101,8 @@
                             <img src="https://i.pravatar.cc/100?img=5" alt="Usuario" class="w-10 h-10 rounded-full border-2 border-white object-cover">
                             <img src="https://i.pravatar.cc/100?img=9" alt="Usuario" class="w-10 h-10 rounded-full border-2 border-white object-cover">
                             <img src="https://i.pravatar.cc/100?img=12" alt="Usuario" class="w-10 h-10 rounded-full border-2 border-white object-cover">
-                            <div class="w-10 h-10 rounded-full border-2 border-white bg-[#F2F3FA] flex items-center justify-center text-xs font-semibold text-[#6C6BFF]">300+</div>
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-[#F2F3FA] flex items-center justify-center text-xs font-semibold text-[#6C6BFF]">130+</div>
                         </div>
-                        <span class="text-sm font-medium text-[#74798C]">personas ayudadas</span>
                     </div>
                 </div>
             </div>
@@ -313,7 +325,7 @@
                     <div class="text-xs font-medium text-[#74798C] uppercase tracking-wider">Terapeutas</div>
                 </div>
                 <div class="text-center">
-                    <div class="text-3xl font-bold text-[#14151A] tracking-tight mb-1">300+</div>
+                    <div class="text-3xl font-bold text-[#14151A] tracking-tight mb-1">130+</div>
                     <div class="text-xs font-medium text-[#74798C] uppercase tracking-wider">Personas ayudadas</div>
                 </div>
                 <div class="text-center">
@@ -372,21 +384,30 @@
     <!-- CTA Band -->
     <section class="py-20 px-6">
         <div class="max-w-7xl mx-auto">
-            <div class="relative rounded-[18px] bg-[linear-gradient(180deg,#6C6BFF_0%,#6362F6_100%)] overflow-hidden shadow-[0_18px_48px_0px_rgba(20,21,26,0.14)] px-8 py-16 md:px-16 text-center md:text-left flex flex-col md:flex-row items-center justify-between">
+            <div class="relative rounded-[18px] bg-[linear-gradient(180deg,#6C6BFF_0%,#6362F6_100%)] overflow-hidden shadow-[0_18px_48px_0px_rgba(20,21,26,0.14)] px-8 py-16 md:px-16 text-center md:text-left">
                 
                 <!-- Decorative Circles -->
                 <div class="absolute -top-20 -right-20 w-80 h-80 rounded-full border-[20px] border-white/5"></div>
                 <div class="absolute -bottom-20 -left-20 w-60 h-60 rounded-full border-[20px] border-white/5"></div>
 
-                <div class="relative z-10 max-w-xl">
-                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Empieza tu camino hoy.</h2>
-                    <p class="text-lg text-white/90 font-light">Únete a más de 300 personas que ya dieron el primer paso hacia una vida más feliz.</p>
-                </div>
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+                    <div class="max-w-xl mx-auto lg:mx-0">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Empieza tu camino hoy.</h2>
+                        <p class="text-lg text-white/90 font-light">Únete a más de 300 personas que ya dieron el primer paso hacia una vida más feliz.</p>
 
-                <div class="relative z-10 mt-8 md:mt-0">
-                    <button class="h-14 px-8 rounded-full bg-white text-[#6C6BFF] text-base font-semibold shadow-[0_10px_28px_0px_rgba(20,21,26,0.15)] hover:bg-[#F6F7FC] transition-colors hover:scale-[1.02] active:scale-[0.98]">
-                        Encuentra tu terapia
-                    </button>
+                        <div class="mt-8">
+                            <button class="h-14 px-8 rounded-full bg-white text-[#6C6BFF] text-base font-semibold shadow-[0_10px_28px_0px_rgba(20,21,26,0.15)] hover:bg-[#F6F7FC] transition-colors hover:scale-[1.02] active:scale-[0.98]">
+                                Encuentra tu terapia
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <!-- Calendly inline widget begin -->
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/zalocn/30min?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                        <!-- Calendly inline widget end -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -417,6 +438,7 @@
                 <div>
                     <h4 class="text-sm font-semibold mb-4 text-white">Legal</h4>
                     <ul class="space-y-3 text-[#9AA0B2] text-sm">
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contáctanos</a></li>
                         <li><a href="terms.html" class="hover:text-white transition-colors">Términos y condiciones</a></li>
                         <li><a href="privacy.html" class="hover:text-white transition-colors">Política de privacidad</a></li>
                     </ul>
