@@ -60,7 +60,7 @@
                 <a href="about.html" class="text-sm font-normal text-[#4A4E5C] hover:text-[#6C6BFF] transition-colors">Acerca de</a>
                 <a href="how-it-works.html" class="text-sm font-normal text-[#4A4E5C] hover:text-[#6C6BFF] transition-colors">Cómo funciona</a>
                 <a href="faq.html" class="text-sm font-normal text-[#4A4E5C] hover:text-[#6C6BFF] transition-colors">Preguntas frecuentes</a>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zalocn/30min?hide_event_type_details=1&hide_gdpr_banner=1'});return false;" class="h-10 px-6 rounded-full bg-[#6C6BFF] hover:bg-[#5757E6] text-white text-sm font-medium transition-all duration-300 shadow-[0_6px_16px_0px_rgba(20,21,26,0.08)] hover:shadow-[0_10px_28px_0px_rgba(20,21,26,0.15)] hover:-translate-y-0.5 inline-flex items-center justify-center">
+                <a href="#precio" class="h-10 px-6 rounded-full bg-[#6C6BFF] hover:bg-[#5757E6] text-white text-sm font-medium transition-all duration-300 shadow-[0_6px_16px_0px_rgba(20,21,26,0.08)] hover:shadow-[0_10px_28px_0px_rgba(20,21,26,0.15)] hover:-translate-y-0.5 inline-flex items-center justify-center">
                     Comenzar
                 </a>
             </div>
@@ -83,7 +83,7 @@
             <div class="space-y-8">
                 <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#E0E7FF] border border-[#C7D2FE]">
                     <span class="flex h-2 w-2 rounded-full bg-[#6C6BFF]"></span>
-                    <span class="text-xs font-medium text-[#5757E6] tracking-tight">Plataforma de salud mental en línea</span>
+                    <span class="text-xs font-medium text-[#5757E6] tracking-tight">Plataforma de salud en línea</span>
                 </div>
 
                 <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tighter leading-[1.15] text-[#14151A]">
@@ -91,12 +91,12 @@
                 </h1>
                 
                 <p class="text-lg text-[#4A4E5C] leading-relaxed max-w-lg">
-                    Terapia profesional, accesible en cualquier momento y lugar. Te asignamos según tus necesidades en tan solo 48 horas.
+                    Terapia mental y consulta médica general virtual, accesibles en cualquier momento y lugar. Te conectamos con un profesional según tus necesidades en tan solo 48 horas.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                    <a href="#agenda" class="h-12 px-8 rounded-full bg-[linear-gradient(135deg,#5757E6_0%,#6C6BFF_55%,#8E8CFF_100%)] text-white text-base font-medium shadow-[0_10px_28px_0px_rgba(108,107,255,0.25)] hover:shadow-[0_14px_32px_0px_rgba(108,107,255,0.35)] transition-all duration-300 hover:-translate-y-1 active:scale-[0.985] flex items-center justify-center gap-2">
-                        <span>Encuentra tu terapia</span>
+                    <a href="how-it-works.html#precio" class="h-12 px-8 rounded-full bg-[linear-gradient(135deg,#5757E6_0%,#6C6BFF_55%,#8E8CFF_100%)] text-white text-base font-medium shadow-[0_10px_28px_0px_rgba(108,107,255,0.25)] hover:shadow-[0_14px_32px_0px_rgba(108,107,255,0.35)] transition-all duration-300 hover:-translate-y-1 active:scale-[0.985] flex items-center justify-center gap-2">
+                        <span>Encuentra tu terapia o consulta</span>
                         <iconify-icon icon="solar:arrow-right-linear" stroke-width="1.5" width="20"></iconify-icon>
                     </a>
                     <div class="flex items-center gap-4 px-4">
@@ -110,57 +110,49 @@
                 </div>
             </div>
 
-            <!-- Right Visual: Interactive Card Stack -->
+            <!-- Right Visual: Member-style card -->
             <div class="relative h-[500px] hidden md:block">
                 <!-- Decorative Elements -->
                 <div class="absolute top-10 right-10 w-64 h-64 bg-[#6C6BFF]/10 rounded-full blur-3xl"></div>
 
-                <!-- Main Card -->
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 bg-white rounded-[26px] p-6 shadow-[0_18px_48px_0px_rgba(20,21,26,0.14)] border border-[rgba(20,21,26,0.06)] z-20 transition-transform duration-500 hover:scale-[1.02]">
-                    <div class="flex items-center justify-between mb-6">
-                        <div class="flex items-center gap-3">
-                            <div class="w-12 h-12 rounded-full bg-[#F2F3FA] overflow-hidden">
-                                <img src="https://i.pravatar.cc/150?img=32" alt="Terapeuta" class="w-full h-full object-cover">
-                            </div>
-                            <div>
-                                <h3 class="text-base font-medium text-[#14151A]">Dra. Sofía Hernández</h3>
-                                <p class="text-xs text-[#74798C]">Psicóloga con licencia</p>
-                            </div>
-                        </div>
-                        <div class="w-8 h-8 rounded-full bg-[#ECFDF5] flex items-center justify-center text-[#22C55E]">
-                            <iconify-icon icon="solar:verified-check-linear" width="18"></iconify-icon>
-                        </div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[390px] bg-white rounded-[26px] p-7 shadow-[0_18px_48px_0px_rgba(20,21,26,0.14)] border border-[rgba(20,21,26,0.06)]">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[11px] font-semibold tracking-widest uppercase text-[#74798C]">Comienza hoy</span>
+                        <span class="text-[11px] font-semibold tracking-widest uppercase text-[#6C6BFF]">Delvir</span>
                     </div>
 
-                    <div class="space-y-3 mb-6">
-                        <div class="h-2 w-3/4 bg-[#F2F3FA] rounded-full"></div>
-                        <div class="h-2 w-full bg-[#F2F3FA] rounded-full"></div>
-                        <div class="h-2 w-5/6 bg-[#F2F3FA] rounded-full"></div>
-                    </div>
+                    <h3 class="mt-4 text-2xl font-semibold tracking-tight text-[#14151A]">
+                        Únete a Delvir
+                    </h3>
+                    <p class="mt-2 text-sm text-[#4A4E5C] leading-relaxed">
+                        Pago por sesión, sin paquetes: <span class="font-semibold text-[#14151A]">Terapia mental US$ 295</span> · <span class="font-semibold text-[#14151A]">Consulta médica general US$ 30</span>.
+                    </p>
 
-                    <div class="flex gap-2 mb-4">
+                    <div class="mt-5 flex flex-wrap gap-2">
                         <span class="px-3 py-1 rounded-full bg-[#F6F7FC] text-xs font-medium text-[#4A4E5C]">Ansiedad</span>
                         <span class="px-3 py-1 rounded-full bg-[#F6F7FC] text-xs font-medium text-[#4A4E5C]">Estrés</span>
+                        <span class="px-3 py-1 rounded-full bg-[#F6F7FC] text-xs font-medium text-[#4A4E5C]">Relaciones</span>
                     </div>
-                    
-                    <button class="w-full h-10 rounded-[10px] bg-[#6C6BFF] text-white text-sm font-medium shadow-[0_6px_16px_0px_rgba(108,107,255,0.2)]">
-                        Mensaje
-                    </button>
-                </div>
 
-                <!-- Background Card 1 -->
-                <div class="absolute top-1/2 left-1/2 -translate-x-[40%] -translate-y-[45%] w-80 h-64 bg-[#F7F7FF] rounded-[26px] border border-[#EBEBF5] z-10 rotate-[-6deg] opacity-80"></div>
-                <!-- Background Card 2 -->
-                <div class="absolute top-1/2 left-1/2 -translate-x-[60%] -translate-y-[55%] w-80 h-64 bg-[#ECEEFA] rounded-[26px] border border-[#EBEBF5] z-0 rotate-[-12deg] opacity-60"></div>
-
-                <!-- Floating Badge -->
-                <div class="absolute bottom-20 right-0 bg-white px-4 py-3 rounded-[14px] shadow-[0_10px_28px_0px_rgba(20,21,26,0.10)] flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
-                    <div class="w-10 h-10 rounded-full bg-[#F0FDF4] flex items-center justify-center text-[#22C55E]">
-                        <iconify-icon icon="solar:chat-round-dots-linear" width="20"></iconify-icon>
+                    <div class="mt-6 grid grid-cols-1 gap-3">
+                        <a href="#precio" class="h-11 rounded-[12px] bg-[#6C6BFF] hover:bg-[#5757E6] text-white text-sm font-semibold shadow-[0_10px_28px_0px_rgba(108,107,255,0.25)] transition-colors inline-flex items-center justify-center gap-2">
+                            <iconify-icon icon="solar:calendar-linear" width="18"></iconify-icon>
+                            Ver agenda
+                        </a>
+                        <a href="#precio" class="h-11 rounded-[12px] bg-white border border-[rgba(20,21,26,0.10)] hover:border-[#6C6BFF]/40 text-[#14151A] hover:text-[#6C6BFF] transition-colors text-sm font-semibold inline-flex items-center justify-center gap-2">
+                            <iconify-icon icon="solar:phone-linear" width="18"></iconify-icon>
+                            Reservar una llamada
+                        </a>
                     </div>
-                    <div>
-                        <p class="text-sm font-medium text-[#14151A]">Sesión en vivo</p>
-                        <p class="text-xs text-[#74798C]">Comienza en 5 min</p>
+
+                    <div class="mt-6 pt-5 border-t border-[rgba(20,21,26,0.06)] flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-[#F2F3FA] overflow-hidden">
+                            <img src="https://i.pravatar.cc/150?img=32" alt="Profesional" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-[#14151A]">Dra. Sofía Hernández</p>
+                            <p class="text-xs text-[#74798C]">Psicóloga con licencia</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,16 +164,16 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16 max-w-2xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[#14151A] mb-4">¿Qué tipo de apoyo necesitas?</h2>
-                <p class="text-base text-[#4A4E5C]">Elige la categoría que mejor describa lo que estás buscando.</p>
+                <p class="text-base text-[#4A4E5C]">Elige la opción que mejor describa lo que estás buscando: terapia o consulta médica general virtual.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Card 1 -->
                 <a href="#" class="group p-6 rounded-[18px] bg-[#F6F7FC] hover:bg-white border border-transparent hover:border-[rgba(20,21,26,0.06)] shadow-none hover:shadow-[0_10px_28px_0px_rgba(20,21,26,0.08)] transition-all duration-300 transform hover:-translate-y-1">
                     <div class="w-12 h-12 rounded-[14px] bg-white border border-[rgba(20,21,26,0.06)] flex items-center justify-center text-[#6C6BFF] mb-6 group-hover:scale-110 transition-transform">
                         <iconify-icon icon="solar:user-circle-linear" width="24" stroke-width="1.5"></iconify-icon>
                     </div>
-                    <h3 class="text-xl font-medium text-[#14151A] mb-2">Terapia individual</h3>
+                    <h3 class="text-xl font-medium text-[#14151A] mb-2">Terapia mental individual</h3>
                     <p class="text-sm text-[#4A4E5C] leading-relaxed">Para mí. Ayuda con ansiedad, depresión o cambios importantes en la vida.</p>
                 </a>
 
@@ -201,6 +193,15 @@
                     </div>
                     <h3 class="text-xl font-medium text-[#14151A] mb-2">Terapia para adolescentes</h3>
                     <p class="text-sm text-[#4A4E5C] leading-relaxed">Para mi hijo/a. Apoyo para edades 13–17 durante la adolescencia.</p>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="#" class="group p-6 rounded-[18px] bg-[#F6F7FC] hover:bg-white border border-transparent hover:border-[rgba(20,21,26,0.06)] shadow-none hover:shadow-[0_10px_28px_0px_rgba(20,21,26,0.08)] transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-[14px] bg-white border border-[rgba(20,21,26,0.06)] flex items-center justify-center text-[#6C6BFF] mb-6 group-hover:scale-110 transition-transform">
+                        <iconify-icon icon="solar:stethoscope-linear" width="24" stroke-width="1.5"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium text-[#14151A] mb-2">Consulta médica general</h3>
+                    <p class="text-sm text-[#4A4E5C] leading-relaxed">Virtual. Orientación general, seguimiento y próximos pasos según tu caso.</p>
                 </a>
             </div>
         </div>
@@ -316,16 +317,16 @@
     <!-- Therapist Vetting Section -->
     <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[#14151A] mb-4">Profesionales, con licencia y verificados.</h2>
+            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-[#14151A] mb-4">Profesionales de salud, con licencia y verificados.</h2>
             <p class="text-base text-[#4A4E5C] max-w-2xl mx-auto mb-16">
-                Solo trabajamos con terapeutas con licencia que cuentan con maestría o doctorado y al menos 3 años de experiencia.
+                Solo trabajamos con profesionales con licencia (terapeutas y médicos) con experiencia comprobada.
             </p>
 
             <!-- Stats Grid -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 border-t border-b border-[rgba(20,21,26,0.06)] py-12">
                 <div class="text-center">
                     <div class="text-3xl font-bold text-[#14151A] tracking-tight mb-1">14+</div>
-                    <div class="text-xs font-medium text-[#74798C] uppercase tracking-wider">Terapeutas</div>
+                    <div class="text-xs font-medium text-[#74798C] uppercase tracking-wider">Profesionales</div>
                 </div>
                 <div class="text-center">
                     <div class="text-3xl font-bold text-[#14151A] tracking-tight mb-1">130+</div>
@@ -350,38 +351,127 @@
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-3xl font-semibold tracking-tight text-center mb-12">¿Por qué elegir Delvir?</h2>
             
-            <div class="bg-white rounded-[18px] shadow-[0_10px_28px_0px_rgba(20,21,26,0.08)] overflow-hidden">
-                <div class="grid grid-cols-2 bg-[#F2F3FA] p-4 text-xs font-semibold text-[#74798C] uppercase tracking-wide border-b border-[rgba(20,21,26,0.06)]">
-                    <div class="col-span-1">Característica</div>
-                    <div class="col-span-1 text-center">Delvir</div>
-                </div>
-                
-                <div class="divide-y divide-[rgba(20,21,26,0.06)]">
-                    <!-- Row 1 -->
-                    <div class="grid grid-cols-2 p-6 items-center">
-                        <div class="text-sm font-medium text-[#14151A]">Paquete (8 sesiones)</div>
-                        <div class="text-sm font-bold text-[#6C6BFF] text-center bg-[#F6F7FC] mx-2 py-1 rounded-[6px]">US$ 2000</div>
+            <div class="w-full max-w-3xl mx-auto bg-white rounded-2xl shadow-[0_10px_28px_rgba(0,0,0,0.1)] overflow-hidden border border-[#0E0F12]/5 hover:shadow-[0_18px_52px_rgba(0,0,0,0.14)] transition-shadow duration-300 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <!-- Header -->
+                <div class="grid grid-cols-2 px-6 py-5 sm:px-8 bg-[#F8F8F8] border-b border-[#0E0F12]/5">
+                    <div class="text-xs uppercase tracking-widest text-[#6E717C] font-medium flex items-center">
+                        Característica
                     </div>
-                    <!-- Row 2 -->
-                    <div class="grid grid-cols-2 p-6 items-center">
-                        <div class="text-sm font-medium text-[#14151A]">Comunicación</div>
-                        <div class="flex justify-center">
-                            <iconify-icon icon="solar:check-circle-bold" class="text-[#22C55E]" width="24"></iconify-icon>
+                    <div class="text-xs uppercase tracking-widest text-[#6C6BFF] font-semibold text-right flex items-center justify-end">
+                        Delvir Plan
+                    </div>
+                </div>
+
+                <!-- Row 1: Pricing -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-6 py-6 sm:px-8 items-center border-b border-[#0E0F12]/5 hover:bg-[#FAFAFA] transition-colors duration-150 group">
+                    <div class="text-[#0E0F12] font-medium text-lg tracking-tight group-hover:translate-x-1 transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                        Precio por sesión
+                    </div>
+                    <div class="flex sm:justify-end">
+                        <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#6C6BFF]/10 text-[#6C6BFF] font-semibold text-sm border border-[#6C6BFF]/20 shadow-sm">
+                            Terapia US$ 295 · Médica US$ 30
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Row 2: Communication -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-6 py-6 sm:px-8 items-center border-b border-[#0E0F12]/5 hover:bg-[#FAFAFA] transition-colors duration-150 group">
+                    <div class="text-[#0E0F12] font-medium text-lg tracking-tight group-hover:translate-x-1 transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                        Comunicación
+                    </div>
+                    <div class="flex sm:justify-end items-center">
+                        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-[#22C55E]/10 text-[#22C55E]">
+                            <iconify-icon icon="solar:check-circle-bold" width="20"></iconify-icon>
                         </div>
                     </div>
-                    <!-- Row 3 -->
-                    <div class="grid grid-cols-2 p-6 items-center">
-                        <div class="text-sm font-medium text-[#14151A]">Cambiar de terapeuta</div>
-                        <div class="text-sm text-[#4A4E5C] text-center">Al instante, sin costo</div>
+                </div>
+
+                <!-- Row 3: Change Therapist -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-6 py-6 sm:px-8 items-center border-b border-[#0E0F12]/5 hover:bg-[#FAFAFA] transition-colors duration-150 group">
+                    <div class="text-[#0E0F12] font-medium text-lg tracking-tight group-hover:translate-x-1 transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                        Cambiar de terapeuta
                     </div>
-                    <!-- Row 4 -->
-                    <div class="grid grid-cols-2 p-6 items-center">
-                        <div class="text-sm font-medium text-[#14151A]">Disponibilidad</div>
-                        <div class="text-sm text-[#4A4E5C] text-center">En cualquier momento</div>
+                    <div class="flex sm:justify-end text-[#3D3F46] text-base">
+                        Al instante, <span class="text-[#0E0F12] font-semibold ml-1">sin costo</span>
+                    </div>
+                </div>
+
+                <!-- Row 4: Availability -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-6 py-6 sm:px-8 items-center hover:bg-[#FAFAFA] transition-colors duration-150 group">
+                    <div class="text-[#0E0F12] font-medium text-lg tracking-tight group-hover:translate-x-1 transition-transform duration-200 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                        Disponibilidad
+                    </div>
+                    <div class="flex sm:justify-end text-[#3D3F46] text-base flex items-center gap-2">
+                        <iconify-icon icon="solar:clock-circle-linear" class="text-[#9A9DA8]" width="16"></iconify-icon>
+                        En cualquier momento
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Precios -->
+    <section id="precio" class="py-16 bg-white scroll-mt-32">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-[#14151A]">Precio</h2>
+          <p class="mt-3 text-[#4A4E5C]">
+            Pago por sesión, sin paquetes.
+          </p>
+        </div>
+
+        <div class="mt-10 max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Terapia mental -->
+            <div class="bg-[#14151A] rounded-[22px] p-8 md:p-10 relative overflow-hidden">
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(108,107,255,0.25),transparent_45%)]"></div>
+              <div class="relative">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white text-xs font-medium border border-white/10">
+                  <iconify-icon icon="solar:tag-price-linear" width="14"></iconify-icon>
+                  Terapia mental
+                </div>
+
+                <p class="mt-4 text-4xl md:text-5xl font-bold text-white tracking-tight">US$ 295</p>
+                <p class="mt-2 text-sm text-white/75">Por sesión</p>
+
+                <ul class="mt-6 space-y-3 text-sm text-white/85">
+                  <li class="flex gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#22C55E]" width="18"></iconify-icon> Sesiones por video o teléfono</li>
+                  <li class="flex gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#22C55E]" width="18"></iconify-icon> Agenda según disponibilidad</li>
+                  <li class="flex gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#22C55E]" width="18"></iconify-icon> Acompañamiento profesional</li>
+                </ul>
+
+                <a href="https://buy.stripe.com/aFaaEX5ly2CmfdH9fbbV600" target="_blank" rel="noopener noreferrer" class="mt-8 w-full h-11 rounded-full bg-[#6C6BFF] hover:bg-[#5757E6] text-white transition-colors text-sm font-semibold shadow-[0_10px_28px_0px_rgba(108,107,255,0.25)] inline-flex items-center justify-center">
+                  Agendar cita ahora
+                </a>
+              </div>
+            </div>
+
+            <!-- Consulta médica general -->
+            <div class="bg-[#14151A] rounded-[22px] p-8 md:p-10 relative overflow-hidden">
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(108,107,255,0.25),transparent_45%)]"></div>
+              <div class="relative">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white text-xs font-medium border border-white/10">
+                  <iconify-icon icon="solar:stethoscope-linear" width="14"></iconify-icon>
+                  Consulta médica general
+                </div>
+
+                <p class="mt-4 text-4xl md:text-5xl font-bold text-white tracking-tight">US$ 30</p>
+                <p class="mt-2 text-sm text-white/75">Por sesión</p>
+
+                <ul class="mt-6 space-y-3 text-sm text-white/85">
+                  <li class="flex gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#22C55E]" width="18"></iconify-icon> Evaluación y orientación general</li>
+                  <li class="flex gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#22C55E]" width="18"></iconify-icon> Seguimiento según necesidad</li>
+                  <li class="flex gap-2"><iconify-icon icon="solar:check-circle-bold" class="text-[#22C55E]" width="18"></iconify-icon> Agenda según disponibilidad</li>
+                </ul>
+
+                <a href="https://buy.stripe.com/8x2cN55lyb8SghL4YVbV601" target="_blank" rel="noopener noreferrer" class="mt-8 w-full h-11 rounded-full bg-[#6C6BFF] hover:bg-[#5757E6] text-white transition-colors text-sm font-semibold shadow-[0_10px_28px_0px_rgba(108,107,255,0.25)] inline-flex items-center justify-center">
+                  Agendar cita ahora
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CTA Band -->
@@ -393,31 +483,10 @@
                 <div class="absolute -top-20 -right-20 w-80 h-80 rounded-full border-[20px] border-white/5"></div>
                 <div class="absolute -bottom-20 -left-20 w-60 h-60 rounded-full border-[20px] border-white/5"></div>
 
-                <!-- Doodle arrow (desktop) -->
-                <svg class="hidden lg:block absolute left-[30%] top-[46%] w-[44%] h-[180px] pointer-events-none opacity-80" viewBox="0 0 600 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <path d="M20 120 C 140 20, 320 20, 520 110" stroke="rgba(255,255,255,0.85)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M520 110 L 485 92" stroke="rgba(255,255,255,0.85)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M520 110 L 495 135" stroke="rgba(255,255,255,0.85)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M60 130 C 170 35, 335 35, 535 118" stroke="rgba(255,255,255,0.28)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-
-                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+                <div class="relative z-10 grid grid-cols-1 gap-10 items-start">
                     <div class="max-w-xl mx-auto lg:mx-0">
                         <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">Empieza tu camino hoy.</h2>
-                        <p class="text-lg text-white/90 font-light">Únete a más de 170 personas que ya dieron el primer paso hacia una vida más feliz.</p>
-
-                        <div class="mt-8">
-                            <button class="h-14 px-8 rounded-full bg-white text-[#6C6BFF] text-base font-semibold shadow-[0_10px_28px_0px_rgba(20,21,26,0.15)] hover:bg-[#F6F7FC] transition-colors hover:scale-[1.02] active:scale-[0.98]">
-                                Encuentra tu terapia
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="w-full">
-                        <!-- Calendly inline widget begin -->
-                        <div class="calendly-inline-widget" data-url="https://calendly.com/zalocn/30min?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
-                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                        <!-- Calendly inline widget end -->
+                        <p class="text-lg text-white/90 font-light">Únete a más de 170 personas que ya dieron el primer paso hacia su bienestar.</p>
                     </div>
                 </div>
             </div>
@@ -431,7 +500,7 @@
                 <div class="col-span-2 lg:col-span-2 pr-10">
                     <a href="#" class="text-2xl font-semibold tracking-tighter text-white mb-6 block">DELVIR</a>
                     <p class="text-[#9AA0B2] text-sm leading-relaxed mb-6">
-                        Terapia en línea, profesional y accesible para tu salud mental.
+                        Terapia mental y consulta médica general virtual, profesional y accesible.
                     </p>
                     <div class="flex gap-4">
                         <a href="#" class="w-10 h-10 rounded-full bg-[rgba(255,255,255,0.05)] flex items-center justify-center hover:bg-[rgba(255,255,255,0.1)] transition-colors text-white">
